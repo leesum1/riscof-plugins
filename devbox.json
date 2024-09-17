@@ -1,0 +1,17 @@
+{
+    "packages": [
+        "python310",
+        "python310Packages.pip",
+        "github:leesum1/my-flakes#riscv64-none-gcc",
+        "github:leesum1/my-flakes#riscv32-none-gcc",
+        "github:leesum1/my-flakes#sail-riscv-rv32",
+        "github:leesum1/my-flakes#sail-riscv-rv64",
+        "spike@latest"
+    ],
+    "shell": {
+        "init_hook": [
+            ". $VENV_DIR/bin/activate",
+            "pip install riscof"
+        ]
+    }
+}
